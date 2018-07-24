@@ -17,7 +17,7 @@
 - apt-get install "" : ""패키지를 설치함
 ### <br>nano 에디터
 #### Nano란?
-- CUI환경에서 파일을 수정 할 수 있는 리눅스 에디터이다.<br>![ ](https://github.com/ShinDoyun/learning-development/blob/master/nano.PNG)
+- CUI환경에서 파일을  할 수 있는 리눅스 에디터이다.<br>![ ](https://github.com/ShinDoyun/learning-development/blob/master/nano.PNG)
 ### <br>IO Redirection
 #### Output
 - IO Redirection Output : 화면으로 출력되는 것을 다른 곳으로 돌려서 파일에 저장 시키는 것
