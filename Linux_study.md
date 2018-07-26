@@ -5,7 +5,7 @@
 - pwd : 현재 머물고 있는 디렉토리를 보여줌<br>![ ](https://github.com/ShinDoyun/learning-development/blob/master/directory_pwd.PNG)
 - mkdir "" : 현재 머물고 있는 디렉토리에 ""이름의 디렉토리를 생성함<br>
 - ls : 현재 디렉토리의 파일들을 보여줌<br>![ ](https://github.com/ShinDoyun/learning-development/blob/master/directory_mkdir.PNG)
-- ls -l : 현재 디렉토리의 파일과 디렉토리들을 자세히 보여줌<br>![ ](https://github.com/ShinDoyun/learning-development/blo1b/master/directory_ls_l.PNG)
+- ls -l : 현재 디렉토리의 파일과 디렉토리들을 자세히 보여줌<br>![ ](https://github.com/ShinDoyun/learning-development/blob/master/directory_ls_l.PNG)
 - cd "" : "" 디렉토리로 이동<br>![ ](https://github.com/ShinDoyun/learning-development/blob/master/directory_cd.PNG)
 - rm "" : ""파일을 삭제함<br>![ ](https://github.com/ShinDoyun/learning-development/blob/master/directory_rm.PNG)
 - rm -r "" : "" 파일 또는 디렉토리를 삭제함<br>![ ](https://github.com/ShinDoyun/learning-development/blob/master/directory_rm_r.PNG)
@@ -40,3 +40,29 @@
  - Shell : 사용자와 커널 사이의 인터페이스를 감싸는 층이다.
  #### Shell Script
  - Shell Script : 셸에서 돌아가도록 작성된 스크립트이다.
+ ### <br> Directory 구조
+ #### / - Root
+ - 모든 파일과 디렉토리들은 Root라는 최상위 디렉토리 부터 시작된다.
+ #### /bin - User Binaries
+ - 사용자가 사용하는 명령들이 위치해 있는 디렉토리이다.
+ #### /sbin - System Binaries   
+ - root user나 시스템 관리자들이 사용하는 프로그램들이 있는 디렉토리이다.
+ #### /etc - Configuration Files
+ - 컴퓨터가 동작하는 설정에 대한 여러가지 변경을 할 수 있는 파일이 있는 디렉토리이다.
+ #### /var - Variable Files
+ - 내용이 고정된 것이 아니라 바뀌고 증가되고 어떻게 바뀔지 알 수 없는 파일들이 있는 디렉토리이다.
+ #### /tmp - Temporary Files
+ - 임시로 필요한 파일들이 들어있는 디렉토리이다.
+ #### /home - Home Directories
+ - 사용자의 파일들이 저장되는 디렉토리이다.
+ #### /opt - Optional add-on Applications
+ - 사용자가 프로그램을 설치할 때 사용하는 디렉토리이다.
+ #### /usr - User Programs
+- 다중 사용자의 주요 유틸리티와 어플리케이션을 포함하고 있는 디렉토리.
+### 파일 찾는법
+#### locate
+- locate : mlocate(컴퓨터에 저장되어 있는 파일들의 목록 데이터베이스)를 탐색한다.
+- locate \*.log : 확장자가 log인 모든 파일들을 찾는다.
+#### find
+- find : 직접 컴퓨터의 디렉토리들을 탐색한다
+- find / -name \*.log : root디렉토리부터 이름에 .log가 들어가 있는 파일들을 찾는다. <br>![ ](https://github.com/ShinDoyun/learning-development/blob/master/Find.PNG?raw=true)
