@@ -34,4 +34,9 @@
   - head -n1 < example.txt : example.txt를 표준 입력으로 넣어줌(stdin)<br>![ ](https://github.com/ShinDoyun/learning-development/blob/master/head_1.PNG)
  #### Append
  - \>\> : 파일을 덮어쓰지 않고 원래있던 파일의 내용 뒤에 추가한다.
- - << : 합쳐서 입력한다.
+ - << : 여러 입력을 하나로 합쳐서 입력한다.
+ ### <br>Shell
+ #### Shell
+ - Shell : 사용자와 커널 사이의 인터페이스를 감싸는 층이다.
+ #### Shell Script
+ - Shell Script : 셸에서 돌아가도록 작성된 스크립트이다.
