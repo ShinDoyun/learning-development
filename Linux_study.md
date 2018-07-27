@@ -1,4 +1,5 @@
 # Linux Shell 요약
+
 ### Directory와 파일
 #### 커맨드 명령어
 - ls -al : 현재 파일 및 디렉토리의 전체 내용을 보여줌<br>![ ](https://github.com/ShinDoyun/learning-development/blob/master/directory_ls_al.PNG)
@@ -9,15 +10,18 @@
 - cd "" : "" 디렉토리로 이동<br>![ ](https://github.com/ShinDoyun/learning-development/blob/master/directory_cd.PNG)
 - rm "" : ""파일을 삭제함<br>![ ](https://github.com/ShinDoyun/learning-development/blob/master/directory_rm.PNG)
 - rm -r "" : "" 파일 또는 디렉토리를 삭제함<br>![ ](https://github.com/ShinDoyun/learning-development/blob/master/directory_rm_r.PNG)
+
 ### <br>sudo(substitute user do)
 #### sudo 란
 - 다른 사용자의 보한 권한, 보통 슈퍼유저로서 프로그램을 구동 시킬 수 있도록 하는 프로그램이다.
 #### sudo 명령어가 필요한 커맨드 명령어 예시
 - rm -rf : 루트 디렉토리에 있는 모든 파일을 삭제함<br>
 - apt-get install "" : ""패키지를 설치함
+
 ### <br>nano 에디터
 #### Nano란?
 - CUI환경에서 파일을  할 수 있는 리눅스 에디터이다.<br>![ ](https://github.com/ShinDoyun/learning-development/blob/master/nano.PNG)
+
 ### <br>IO Redirection
 #### Output
 - IO Redirection Output : 화면으로 출력되는 것을 다른 곳으로 돌려서 파일에 저장 시키는 것
@@ -35,11 +39,13 @@
  #### Append
  - \>\> : 파일을 덮어쓰지 않고 원래있던 파일의 내용 뒤에 추가한다.
  - << : 여러 입력을 하나로 합쳐서 입력한다.
+ 
  ### <br>Shell
  #### Shell
  - Shell : 사용자와 커널 사이의 인터페이스를 감싸는 층이다.
  #### Shell Script
  - Shell Script : 셸에서 돌아가도록 작성된 스크립트이다.
+ 
  ### <br> Directory 구조
  #### / - Root
  - 모든 파일과 디렉토리들은 Root라는 최상위 디렉토리 부터 시작된다.
@@ -59,6 +65,7 @@
  - 사용자가 프로그램을 설치할 때 사용하는 디렉토리이다.
  #### /usr - User Programs
 - 다중 사용자의 주요 유틸리티와 어플리케이션을 포함하고 있는 디렉토리.
+
 ### 파일 찾는법
 #### locate
 - locate : mlocate(컴퓨터에 저장되어 있는 파일들의 목록 데이터베이스)를 탐색한다.
@@ -66,3 +73,24 @@
 #### find
 - find : 직접 컴퓨터의 디렉토리들을 탐색한다
 - find / -name \*.log : root디렉토리부터 이름에 .log가 들어가 있는 파일들을 찾는다. <br>![ ](https://github.com/ShinDoyun/learning-development/blob/master/Find.PNG?raw=true)
+#### whereis
+- whereis : $PATH 와 $MANPATH환경 변수의 경로에 있는 실행 파일, 소스, 매뉴얼 파일을 옵션에 맞게 찾는다.
+- whereis "" : ""파일을 찾고 경로를 알려준다.
+
+### <br>프로세스와 실행
+#### 프로세스 모니터링
+- ps
+  - ps : 백그라운드를 제외한 실행중인 프로세스의 리스트를 보여준다.<br>![ ](https://github.com/ShinDoyun/learning-development/blob/master/ps.PNG)
+  - ps aux : 백그라운드를 포함한 실행중인 프로세스의 리스트를 보여준다.
+  - ps aux | grep apache : 아파치라는 문자열을 포함한 프로세스의 리스트를 보여준다.
+- top : 실행 중인 프로세스 리스트를 좀더 세부적이고 보기좋게 보여준다.<br>![ ](https://github.com/ShinDoyun/learning-development/blob/master/Top.PNG)
+#### 백그라운드 실행
+- Ctrl + z : 실행중인 프로그램을 백그라운드로 보낸다. 이 기능을 실행하면 프로그램이 일시 정지가 된다.
+- jobs : 백그라운드 작업들의 목록을 보여준다.
+#### 항상 실행
+- 데몬(daemon) : 언제나 켜져있는 프로그램.
+#### 정기적 실행(cron)
+- crontab -e : 정기적으로 실행할 일 들을 에디터로 정의한다.
+- crontab -l : 정기적으로 실행중인 프로그램을 보여준다.
+#### 쉘을 시작할 때 실행
+- .bashrc : bash 쉘이 시작될때 실행하고자 하는 프로그램을 넣을 때 편집 하는 파일.
