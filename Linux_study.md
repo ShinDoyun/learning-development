@@ -103,10 +103,27 @@
 - useradd -m "" : ""라는 유저를 추가하고 홈디렉토리를 같이 만들어준다.
 - usermode -a -G sudo "" : 이미 생성되어 있는 ""라는 유저에게 super user 권한을 부여한다. ![ ](https://github.com/ShinDoyun/learning-development/blob/master/id.PNG)
 
-### <br>권한
+### <br>권한(chmod)
 #### 권한 기본
 - r : 읽기 권한
 - w : 쓰기 권한
 - x : 실행 권한
-####
-
+#### 권한 변경
+- chmod o-r "" : ""파일에 대한 other의 read권한을 없앤다.(o : other, u : user)
+- chmode u+x "" : ""파일에 대한 user의 execute권한을 준다.
+#### directory의 권한
+- r : directory의 파일들을 열람 할 수 있는 권한
+- w : directory안의 파일을 생성, 수정 삭제 할 수 있는 권한
+- x : cd기능을 통해 directory에 들어 갈 수 있는 권한
+- chmod -R ''+'' "" : "" directory의 안에있는 폴더까지 재귀적으로 권한을 부여또는 박탈한다.
+#### chmod 사용법 정리
+- 숫자를 통한 권한 부여 : <br>![ ](https://github.com/ShinDoyun/learning-development/blob/master/chmod_htu.PNG)<br>예시) chmod 124 example.txt
+- 권한 부여 대상 설정
+  - u : user(owner)
+  - g : group
+  - o : others
+  - a : all
+- 권한 부여 방식 설정
+  - + : 권한 부여
+  - - : 권한 박탈
+  - - : 지정 권한으로 변경
