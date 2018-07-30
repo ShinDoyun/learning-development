@@ -94,6 +94,7 @@
 - crontab -l : 정기적으로 실행중인 프로그램을 보여준다.
 #### 쉘을 시작할 때 실행
 - .bashrc : bash 쉘이 시작될때 실행하고자 하는 프로그램을 넣을 때 편집 하는 파일.
+
 ### <br>다중사용자
 #### 사용자확인
 - id : 자신이 어떤 계정으로 접속해 있는가.
@@ -101,3 +102,11 @@
 #### 사용자의 추가
 - useradd -m "" : ""라는 유저를 추가하고 홈디렉토리를 같이 만들어준다.
 - usermode -a -G sudo "" : 이미 생성되어 있는 ""라는 유저에게 super user 권한을 부여한다. ![ ](https://github.com/ShinDoyun/learning-development/blob/master/id.PNG)
+
+### <br>권한
+#### 권한 기본
+- r : 읽기 권한
+- w : 쓰기 권한
+- x : 실행 권한
+####
+
